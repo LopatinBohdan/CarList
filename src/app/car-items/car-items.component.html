@@ -1,0 +1,11 @@
+<p>car-items works!</p>
+
+<ul>Cars List
+   <li *ngFor="let item of cars"><button (click)="OnSelect(item)">{{item.title}} Info</button></li>
+</ul>
+
+<div>
+    <h1 name="title">{{selectedCar.title}}</h1>
+    <textarea name="info" value="{{selectedCar.description}}"></textarea><br>
+    <img src="{{selectedCar.photo}}" width="50%" >
+</div>
